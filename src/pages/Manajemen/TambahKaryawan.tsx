@@ -236,8 +236,6 @@ export const TambahKaryawan = () => {
           </div>
         </div>
         <Toast ref={toast} />
-
-        <ConfirmDialog />
       </div>
     </DefaultLayout>
   );

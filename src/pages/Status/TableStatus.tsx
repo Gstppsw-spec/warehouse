@@ -251,8 +251,6 @@ const TableStatus = ({searchQuery}: any) => {
         onPageChange={setCurrentPage}
       />
         <Toast ref={toast} />
-
-<ConfirmDialog />
     </div>
   );
 };

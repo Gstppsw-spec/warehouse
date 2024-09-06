@@ -206,11 +206,11 @@ const TableManajemen = ({ searchQuery }: any) => {
             </div>
 
             <div className=" items-center justify-center p-2 flex">
-              <a href="" className='text-red-600' onClick={() => handleTambah(brand)}>Isi Form Penilaian</a>
+              <span className='text-red-600 cursor-pointer underline' onClick={() => handleTambah(brand)}>Isi Form Penilaian</span>
             </div>
 
             <div className=" items-center justify-center p-2 flex">
-            <a href="" className='text-red-600' onClick={() => handleLihat(brand)}>Lihat Hasil</a>
+            <span className='text-red-600 cursor-pointer' onClick={() => handleLihat(brand)}>Lihat Hasil</span>
             </div>
             <div className="items-center justify-center p-2 flex">
               {/* Detail Icon */}
@@ -286,7 +286,6 @@ const TableManajemen = ({ searchQuery }: any) => {
       />
       <Toast ref={toast} />
 
-      <ConfirmDialog />
     </div>
   );
 };

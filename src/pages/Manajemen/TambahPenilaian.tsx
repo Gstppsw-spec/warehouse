@@ -449,8 +449,6 @@ export const TambahPenilaian = () => {
           </div>
         </div>
         <Toast ref={toast} />
-
-        <ConfirmDialog />
       </div>
     </DefaultLayout>
   );

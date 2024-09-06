@@ -248,7 +248,6 @@ export const ProfilPengguna = () => {
         </div>
         <Toast ref={toast} />
 
-        <ConfirmDialog />
       </div>
     </DefaultLayout>
   );

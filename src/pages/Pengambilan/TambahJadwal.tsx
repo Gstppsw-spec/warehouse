@@ -242,8 +242,6 @@ export const TambahJadwal = () => {
           </div>
         </div>
         <Toast ref={toast} />
-
-        <ConfirmDialog />
       </div>
     </DefaultLayout>
   );

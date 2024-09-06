@@ -210,8 +210,6 @@ export const EditStatus = () => {
           </div>
         </div>
         <Toast ref={toast} />
-
-        <ConfirmDialog />
       </div>
     </DefaultLayout>
   );

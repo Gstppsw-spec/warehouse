@@ -9,7 +9,6 @@ import SelectPenanggungJawab from '../Component/select-penganggung';
 import SelectSatuan from '../Component/select-satuan';
 import SelectJenisBarang from '../Component/select-jenis';
 
-
 export const TambahEditBarang = () => {
   const navigate = useNavigate();
   const [value, setValue] = useState('');
@@ -18,11 +17,14 @@ export const TambahEditBarang = () => {
   const { data } = location.state || {};
 
   console.log(data);
-  
 
   const toast = useRef<Toast>(null);
 
-  const { register, handleSubmit, setValue: setValueForm } = useForm({
+  const {
+    register,
+    handleSubmit,
+    setValue: setValueForm,
+  } = useForm({
     mode: 'all',
     reValidateMode: 'onChange',
     defaultValues: {
@@ -43,12 +45,10 @@ export const TambahEditBarang = () => {
   });
 
   const accept = () => {
-   navigate('/penyimpanan')
-}
+    navigate('/penyimpanan');
+  };
 
-const reject = () => {
-    
-}
+  const reject = () => {};
 
   const confirm2 = () => {
     confirmDialog({
@@ -91,8 +91,6 @@ const reject = () => {
     });
   };
 
-  
-
   const formatRupiah = (number: any, prefix: any) => {
     const numberString = number.replace(/[^,\d]/g, '').toString();
     const split = numberString.split(',');
@@ -125,11 +123,10 @@ const reject = () => {
   const onSubmit: SubmitHandler<any> = useCallback(
     (formValues) => {
       if (data) {
-          confirm2
-          console.log(formValues);
-          
+        confirm2;
+        console.log(formValues);
       } else {
-        confirm2
+        confirm2;
       }
     },
     [data],
@@ -200,10 +197,10 @@ const reject = () => {
 
                     <div className="w-1/4">
                       <SelectSatuan
-                      {...register('idSatuan')}
-                      setValue={setValueForm}
-                      kecId={data?.idSatuan}
-                    />
+                        {...register('idSatuan')}
+                        setValue={setValueForm}
+                        kecId={data?.idSatuan}
+                      />
                     </div>
                   </div>
                 </div>
@@ -222,7 +219,6 @@ const reject = () => {
                     <SelectPenanggungJawab
                       {...register('idPenanggungJawab')}
                       setValue={setValueForm}
-       
                       kecId={data?.idPenanggungJawab}
                     />
                   </div>
@@ -266,7 +262,7 @@ const reject = () => {
                       {...register('idJenis')}
                       setValue={setValueForm}
                       kecId={data?.idJenis}
-                      />
+                    />
                   </div>
                 </div>
 
@@ -332,7 +328,10 @@ const reject = () => {
 
                   <div className="w-1/2 flex flex-row gap-10">
                     <div className="w-1/2">
-                      <button onClick={() => navigate('/penyimpanan')} className="flex w-full justify-center rounded-md bg-white p-3 font-medium text-black hover:bg-opacity-90 border-black border">
+                      <button
+                        onClick={() => navigate('/penyimpanan')}
+                        className="flex w-full justify-center rounded-md bg-white p-3 font-medium text-black hover:bg-opacity-90 border-black border"
+                      >
                         Batal
                       </button>
                     </div>
@@ -351,8 +350,6 @@ const reject = () => {
           </div>
         </div>
         <Toast ref={toast} />
-
-        <ConfirmDialog />
       </div>
     </DefaultLayout>
   );

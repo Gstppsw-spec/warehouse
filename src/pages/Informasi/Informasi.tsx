@@ -171,8 +171,6 @@ export const Informasi = () => {
         </div>
       </form>
       <Toast ref={toast} />
-
-      <ConfirmDialog />
     </DefaultLayout>
   );
 };
