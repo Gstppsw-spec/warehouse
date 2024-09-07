@@ -426,6 +426,7 @@ export const TambahPenilaian = () => {
 
                   {/* <div className={`w-1/2 flex flex-row gap-10 ${form == 2 ? 'hidden' : ''}`}> */}
                   <div className='w-1/2 flex flex-row gap-10'>
+                  <div className="w-1/2"></div>
                     <div className="w-1/2">
                       <button
                         onClick={() => navigate('/manajemen')}

@@ -47,7 +47,8 @@ export const TambahKaryawan = () => {
     confirmDialog({
       message: (
         <span style={{ fontSize: '12px', wordWrap: 'break-word' }}>
-          Karyawan baru berhasil ditambahkan. Anda akan dialihkan ke halaman manajemen.
+          Karyawan baru berhasil ditambahkan. Anda akan dialihkan ke halaman
+          manajemen.
         </span>
       ),
       header: 'Berhasil menambahkan karyawan',
@@ -196,7 +197,7 @@ export const TambahKaryawan = () => {
                         {...register('idBarang')}
                         setValue={setValueForm}
                         kecId={data?.idBarang}
-                        from='manajemen'
+                        from="manajemen"
                       />
                     </div>
 
@@ -213,10 +214,11 @@ export const TambahKaryawan = () => {
                   <div className="w-1/2"></div>
 
                   <div className="w-1/2 flex flex-row gap-10">
+                    <div className="w-1/2"></div>
                     <div className="w-1/2">
                       <button
                         onClick={() => navigate('/manajemen')}
-                        className="flex w-full justify-center rounded-md bg-white p-3 font-medium text-black hover:bg-opacity-90 border-black border"
+                        className="flex w-full justify-center rounded-md bg-white p-3 font-bold text-[#344054] hover:bg-opacity-90 border-black border"
                       >
                         Batal
                       </button>
@@ -224,7 +226,7 @@ export const TambahKaryawan = () => {
                     <div className="w-1/2">
                       <button
                         onClick={confirm2}
-                        className="flex w-full justify-center rounded-md bg-[#24A3C4] p-3 font-medium text-gray hover:bg-opacity-90"
+                        className=" flex w-full justify-center rounded-md bg-[#24A3C4] p-3 font-bold text-gray hover:bg-opacity-90"
                       >
                         Simpan
                       </button>

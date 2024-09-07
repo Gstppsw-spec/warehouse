@@ -225,6 +225,7 @@ export const ProfilPengguna = () => {
                 <div className="w-1/2"></div>
 
                 <div className="w-1/2 flex flex-row gap-10">
+                <div className="w-1/2"></div>
                   <div className="w-1/2">
                     <button
                       onClick={() => navigate('/')}

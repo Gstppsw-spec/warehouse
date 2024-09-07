@@ -239,7 +239,7 @@ const TableOne = ({searchQuery}: any) => {
             </div>
             <div className="items-center justify-center p-2 flex">
               {/* Detail Icon */}
-              <button className="text-black text-sm mr-4">
+              {/* <button className="text-black text-sm mr-4">
                 <svg
                   className="fill-current"
                   width="18"
@@ -257,7 +257,7 @@ const TableOne = ({searchQuery}: any) => {
                     fill=""
                   />
                 </svg>
-              </button>
+              </button> */}
 
               {/* Edit Icon */}
               <button onClick={() => handleEdit(brand)} className="text-green-500 text-sm mr-4">

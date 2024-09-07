@@ -56,8 +56,8 @@ const SignIn: React.FC = () => {
     <div className="dark:bg-boxdark-2 dark:text-bodydark">
       <main>
         <div className="">
-          <div className="p-12">
-            <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+          <div className="p-12 flex items-center justify-center">
+            <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark w-4/5">
               <div className="flex flex-wrap w-full">
                 <div className="border-stroke dark:border-strokedark w-2/5 h-[500px]">
                   <div className="pl-12.5 pr-12.5 py-2 items-center justify-items-center">

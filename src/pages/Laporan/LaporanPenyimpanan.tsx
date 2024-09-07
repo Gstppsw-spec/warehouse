@@ -27,7 +27,7 @@ export const LaporanPenyimpanan = () => {
       rejectClassName:
         'bg-gray-300 text-black px-6 py-1 rounded-md text-sm border border-black', // Reject button styles
       className: 'w-[500px]',
-      acceptLabel: 'Delete',
+      acceptLabel: 'Ekspor',
       rejectLabel: 'Cancel',
       accept() {
         navigate('/laporan-penyimpanan');

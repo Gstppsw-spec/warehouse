@@ -28,6 +28,7 @@ import { EditStatus } from './pages/Status/EditStatus';
 import { TambahJadwal } from './pages/Pengambilan/TambahJadwal';
 import { TambahKaryawan } from './pages/Manajemen/TambahKaryawan';
 import { TambahPenilaian } from './pages/Manajemen/TambahPenilaian';
+import { Pengaturan } from './pages/Pengaturan/Pengaturan';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -278,6 +279,16 @@ function App() {
             <>
               <PageTitle title="Tambah Penilaian Karyawan | Warehouse Management System" />
               <TambahPenilaian />
+            </>
+          }
+        />
+
+<Route
+          path="/pengaturan"
+          element={
+            <>
+              <PageTitle title="Pengaturan | Warehouse Management System" />
+              <Pengaturan />
             </>
           }
         />
