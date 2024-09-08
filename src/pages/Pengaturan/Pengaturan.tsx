@@ -4,6 +4,7 @@ import { useState } from 'react';
 import indonesia from '../../images/logo/indonesia.png';
 import uk from '../../images/logo/united-kingdom.png';
 import { FaChevronDown } from 'react-icons/fa';
+import DarkModeSwitcher from '../../components/Header/DarkModeSwitcher';
 
 export const Pengaturan = () => {
   const navigate = useNavigate();
@@ -62,51 +63,59 @@ export const Pengaturan = () => {
       </div>
       <hr className="my-3" />
       <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
-        <div className='p-6'>
-             <label className="mb-2.5 block font-medium text-black dark:text-white">
-          Pilih Bahasa
-        </label>
-        <div className="relative inline-block">
-          <button
-            className="border rounded-lg py-2 px-4 bg-white dark:bg-gray-800 dark:text-white flex items-center justify-between w-60"
-            onClick={toggleDropdown}
-          >
-            {/* Display selected language */}
-            <div className="flex items-center">
-              <img
-                src={selectedLang.flag}
-                alt={selectedLang.label}
-                className="w-6 h-6 mr-2"
-              />
-              {selectedLang.label}
-            </div>
-            {/* Arrow icon */}
-            <FaChevronDown className="ml-2" />
-          </button>
+        <div className="p-6 flex flex-row gap-9">
+          <div className="w-1/2 flex flex-col gap-5 ">
+            <label className="mb-2.5 block font-medium text-black dark:text-white">
+              Pilih Bahasa
+            </label>
+            <div className="relative inline-block">
+              <button
+                className="border rounded-lg py-2 px-4 bg-white dark:bg-gray-800 dark:text-white flex items-center justify-between w-60"
+                onClick={toggleDropdown}
+              >
+                {/* Display selected language */}
+                <div className="flex items-center">
+                  <img
+                    src={selectedLang.flag}
+                    alt={selectedLang.label}
+                    className="w-6 h-6 mr-2"
+                  />
+                  {selectedLang.label}
+                </div>
+                {/* Arrow icon */}
+                <FaChevronDown className="ml-2" />
+              </button>
 
-          {dropdownOpen && (
-            <div className="absolute mt-1 w-full bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:text-white">
-              <div className="py-1">
-                {languages.map((lang) => (
-                  <div
-                    key={lang.code}
-                    className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer"
-                    onClick={() => handleLanguageChange(lang.code)}
-                  >
-                    <img
-                      src={lang.flag}
-                      alt={lang.label}
-                      className="w-6 h-6 mr-2"
-                    />
-                    {lang.label}
+              {dropdownOpen && (
+                <div className="absolute mt-1 w-full bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:text-white">
+                  <div className="py-1">
+                    {languages.map((lang) => (
+                      <div
+                        key={lang.code}
+                        className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer"
+                        onClick={() => handleLanguageChange(lang.code)}
+                      >
+                        <img
+                          src={lang.flag}
+                          alt={lang.label}
+                          className="w-6 h-6 mr-2"
+                        />
+                        {lang.label}
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
+                </div>
+              )}
             </div>
-          )}
+          </div>
+
+          <div className="w-1/2 flex flex-col gap-5 ">
+            <label className="mb-2.5 block font-medium text-black dark:text-white">
+              Pilih Mode
+            </label>
+            <DarkModeSwitcher />
+          </div>
         </div>
-        </div>
-       
       </div>
     </DefaultLayout>
   );
