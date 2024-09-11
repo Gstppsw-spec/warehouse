@@ -18,7 +18,7 @@ export const Manajemen = () => {
             className="block "
           >
             <svg
-              className="fill-black"
+              className="fill-black dark:fill-white"
               width="20"
               height="18"
               viewBox="0 0 20 18"
@@ -31,7 +31,7 @@ export const Manajemen = () => {
               />
             </svg>
           </button>
-          <h1 className="text-lg font-bold text-black">
+          <h1 className="text-lg font-bold text-black dark:text-white">
             Manajemen Tenaga Kerja
           </h1>
         </div>

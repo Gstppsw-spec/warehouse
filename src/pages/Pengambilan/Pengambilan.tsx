@@ -18,7 +18,7 @@ export const Pengambilan = () => {
             className="block "
           >
             <svg
-              className="fill-black"
+              className="fill-black dark:fill-white"
               width="20"
               height="18"
               viewBox="0 0 20 18"
@@ -31,7 +31,7 @@ export const Pengambilan = () => {
               />
             </svg>
           </button>
-          <h1 className="text-lg font-bold text-black">Pengambilan Barang</h1>
+          <h1 className="text-lg font-bold text-black dark:text-white">Pengambilan Barang</h1>
         </div>
 
         <div className="flex flex-row gap-3">

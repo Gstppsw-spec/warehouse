@@ -227,23 +227,23 @@ const TablePengambilan = ({searchQuery}: any) => {
             key={key}
           >
             <div className="flex items-center gap-3 p-2">
-              <p className="text-black text-sm">{brand.kode}</p>
+              <p className="text-black text-sm dark:text-white">{brand.kode}</p>
             </div>
 
             <div className="flex items-center justify-center p-2">
-              <p className="text-black text-sm">{brand.name}</p>
+              <p className="text-black text-sm dark:text-white">{brand.name}</p>
             </div>
 
             <div className="flex items-center justify-center p-2">
-              <p className="text-black text-sm">{brand.beratBarang} {brand.satuan}</p>
+              <p className="text-black text-sm dark:text-white">{brand.beratBarang} {brand.satuan}</p>
             </div>
 
             <div className=" items-center justify-center p-2 flex">
-              <p className="text-black text-sm">{brand.jadwalPengambilan}</p>
+              <p className="text-black text-sm dark:text-white">{brand.jadwalPengambilan}</p>
             </div>
 
             <div className=" items-center justify-center p-2 flex">
-              <p className="text-black text-sm">{brand.ekspedisi}</p>
+              <p className="text-black text-sm dark:text-white">{brand.ekspedisi}</p>
             </div>
             <div className="items-center justify-center p-2 flex">
               {/* Detail Icon */}

@@ -120,7 +120,7 @@ export const TambahJadwal = () => {
             className="block "
           >
             <svg
-              className="fill-black"
+              className="fill-black dark:fill-white"
               width="18"
               height="16"
               viewBox="0 0 20 18"
@@ -134,7 +134,7 @@ export const TambahJadwal = () => {
             </svg>
           </button>
           <div>
-            <h1 className="text-lg font-bold text-black">Buat Jadwal</h1>
+            <h1 className="text-lg font-bold text-black dark:text-white">Buat Jadwal</h1>
           </div>
         </div>
       </div>

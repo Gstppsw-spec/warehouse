@@ -246,7 +246,7 @@ export const TambahPenilaian = () => {
             className="block "
           >
             <svg
-              className="fill-black"
+              className="fill-black dark:fill-white"
               width="18"
               height="16"
               viewBox="0 0 20 18"
@@ -260,7 +260,7 @@ export const TambahPenilaian = () => {
             </svg>
           </button>
           <div>
-            <h1 className="text-lg font-bold text-black">Penilaian Kayrawan</h1>
+            <h1 className="text-lg font-bold text-black dark:text-white">Penilaian Kayrawan</h1>
           </div>
         </div>
       </div>

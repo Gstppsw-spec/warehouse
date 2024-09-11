@@ -44,7 +44,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }: any) => {
         ) : (
           <button
             key={number}
-            className={`px-2 py-1 mx-1 text-sm ${
+            className={`px-2 py-1 mx-1 text-sm dark:text-white ${
               number === currentPage
                 ? 'bg-blue-500 text-white rounded-full'
                 : 'bg-gray-200 text-black'

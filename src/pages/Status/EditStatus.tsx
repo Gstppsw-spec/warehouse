@@ -105,7 +105,7 @@ export const EditStatus = () => {
             className="block "
           >
             <svg
-              className="fill-black"
+              className="fill-black dark:fill-white"
               width="18"
               height="16"
               viewBox="0 0 20 18"
@@ -119,7 +119,7 @@ export const EditStatus = () => {
             </svg>
           </button>
           <div>
-            <h1 className="text-lg font-bold text-black">Edit Status Barang</h1>
+            <h1 className="text-lg font-bold text-black dark:text-white">Edit Status Barang</h1>
           </div>
         </div>
       </div>

@@ -194,15 +194,15 @@ const TableManajemen = ({ searchQuery }: any) => {
             key={key}
           >
             <div className="flex items-center gap-3 p-2">
-              <p className="text-black text-sm">{brand.id}</p>
+              <p className="text-black text-sm dark:text-white">{brand.id}</p>
             </div>
 
             <div className="flex items-center justify-center p-2">
-              <p className="text-black text-sm">{brand.name}</p>
+              <p className="text-black text-sm dark:text-white">{brand.name}</p>
             </div>
 
             <div className="flex items-center justify-center p-2">
-              <p className="text-black text-sm">{brand.posisi}</p>
+              <p className="text-black text-sm dark:text-white">{brand.posisi}</p>
             </div>
 
             <div className=" items-center justify-center p-2 flex">

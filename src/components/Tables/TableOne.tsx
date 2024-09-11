@@ -219,23 +219,23 @@ const TableOne = ({searchQuery}: any) => {
             key={key}
           >
             <div className="flex items-center justify-center p-2">
-              <p className="text-black text-sm">{brand.kodeBarang}</p>
+              <p className="text-black text-sm dark:text-white">{brand.kodeBarang}</p>
             </div>
 
             <div className="flex items-center justify-center p-2">
-              <p className="text-black text-sm">{brand.namaBarang}</p>
+              <p className="text-black text-sm dark:text-white">{brand.namaBarang}</p>
             </div>
 
             <div className="flex items-center justify-center p-2">
-              <p className="text-black text-sm">{brand.jumlah}</p>
+              <p className="text-black text-sm dark:text-white">{brand.jumlah}</p>
             </div>
 
             <div className=" items-center justify-center p-2 flex">
-              <p className="text-black text-sm">{brand.jenis}</p>
+              <p className="text-black text-sm dark:text-white">{brand.jenis}</p>
             </div>
 
             <div className=" items-center justify-center p-2 flex">
-              <p className="text-black text-sm">{brand.tanggalKadaluarsa}</p>
+              <p className="text-black text-sm dark:text-white">{brand.tanggalKadaluarsa}</p>
             </div>
             <div className="items-center justify-center p-2 flex">
               {/* Detail Icon */}

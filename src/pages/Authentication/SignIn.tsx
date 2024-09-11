@@ -75,7 +75,7 @@ const SignIn: React.FC = () => {
                         onClick={toggleDropdown}
                       >
                         {/* Display selected language */}
-                        <div className="flex items-center">
+                        <div className="flex items-center dark:text-black">
                           <img
                             src={selectedLang.flag}
                             alt={selectedLang.label}
@@ -93,7 +93,7 @@ const SignIn: React.FC = () => {
                             {languages.map((lang) => (
                               <div
                                 key={lang.code}
-                                className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer"
+                                className="dark:text-black flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer"
                                 onClick={() => handleLanguageChange(lang.code)}
                               >
                                 <img
@@ -196,7 +196,7 @@ const SignIn: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="w-3/5 rounded-sm border border-stroke bg-[#24A3C4] shadow-default dark:border-strokedark dark:bg-boxdark">
+                <div className="w-3/5 rounded-sm border border-stroke bg-[#24A3C4] shadow-default dark:border-strokedark ">
                   <div className="text-center">
                     <div className="inline-block relative">
                       <img

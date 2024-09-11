@@ -96,7 +96,7 @@ export const Informasi = () => {
             className="block "
           >
             <svg
-              className="fill-black"
+              className="fill-black dark:fill-white"
               width="20"
               height="18"
               viewBox="0 0 20 18"
@@ -109,7 +109,7 @@ export const Informasi = () => {
               />
             </svg>
           </button>
-          <h1 className="text-lg font-bold text-black">
+          <h1 className="text-lg font-bold text-black dark:text-white">
             Informasi Instansi / Perusahaan
           </h1>
         </div>

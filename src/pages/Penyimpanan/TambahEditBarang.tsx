@@ -144,7 +144,7 @@ export const TambahEditBarang = () => {
             className="block "
           >
             <svg
-              className="fill-black"
+              className="fill-black dark:fill-white"
               width="18"
               height="16"
               viewBox="0 0 20 18"
@@ -158,7 +158,7 @@ export const TambahEditBarang = () => {
             </svg>
           </button>
           <div>
-            <h1 className="text-lg font-bold text-black">Tambah Barang</h1>
+            <h1 className="text-lg font-bold text-black dark:text-white">Tambah Barang</h1>
           </div>
         </div>
       </div>

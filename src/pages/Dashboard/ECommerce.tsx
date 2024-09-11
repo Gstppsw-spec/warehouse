@@ -33,8 +33,8 @@ const ECommerce: React.FC = () => {
   return (
     <DefaultLayout>
       <div className="">
-        <h1 className="text-2xl font-bold text-black">Dashboard</h1>
-        <h4 className="text-black">Selamat Datang, Hasiolan !</h4>
+        <h1 className="text-2xl font-bold text-black dark:text-white">Dashboard</h1>
+        <h4 className="text-black dark:text-white">Selamat Datang, Hasiolan !</h4>
       </div>
       <hr className="my-5" />
 

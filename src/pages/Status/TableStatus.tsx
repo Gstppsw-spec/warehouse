@@ -169,19 +169,19 @@ const TableStatus = ({searchQuery}: any) => {
             key={key}
           >
             <div className="flex items-center gap-3 p-2">
-              <p className="text-black text-sm">{brand.kode}</p>
+              <p className="text-black text-sm dark:text-white">{brand.kode}</p>
             </div>
 
             <div className="flex items-center justify-center p-2">
-              <p className="text-black text-sm">{brand.name}</p>
+              <p className="text-black text-sm dark:text-white">{brand.name}</p>
             </div>
 
             <div className="flex items-center justify-center p-2">
-              <p className="text-black text-sm">{brand.penanggungJawab}</p>
+              <p className="text-black text-sm dark:text-white">{brand.penanggungJawab}</p>
             </div>
 
             <div className=" items-center justify-center p-2 flex">
-              <p className="text-black text-sm">{brand.status}</p>
+              <p className="text-black text-sm dark:text-white">{brand.status}</p>
             </div>
 
             <div className="items-center justify-center p-2 flex">

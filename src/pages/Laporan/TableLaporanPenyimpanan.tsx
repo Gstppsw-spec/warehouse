@@ -254,28 +254,28 @@ const TableLaporanPenyimpanan = ({ searchQuery }: any) => {
             key={key}
           >
             <div className="flex items-center gap-3 p-2">
-              <p className="text-black text-sm">{brand.kode}</p>
+              <p className="text-black text-sm dark:text-white">{brand.kode}</p>
             </div>
 
             <div className="flex items-center justify-center p-2">
-              <p className="text-black text-sm">{brand.name}</p>
+              <p className="text-black text-sm dark:text-white">{brand.name}</p>
             </div>
 
             <div className="flex items-center justify-center p-2">
-              <p className="text-black text-sm">{brand.stock}</p>
+              <p className="text-black text-sm dark:text-white">{brand.stock}</p>
             </div>
 
             <div className=" items-center justify-center p-2 flex">
-              <p className="text-black text-sm">{brand.jenis}</p>
+              <p className="text-black text-sm dark:text-white">{brand.jenis}</p>
             </div>
             <div className=" items-center justify-center p-2 flex">
-              <p className="text-black text-sm">{brand.tanggalMasuk}</p>
+              <p className="text-black text-sm dark:text-white">{brand.tanggalMasuk}</p>
             </div>
             <div className=" items-center justify-center p-2 flex">
-              <p className="text-black text-sm">{brand.tanggalKeluar}</p>
+              <p className="text-black text-sm dark:text-white">{brand.tanggalKeluar}</p>
             </div>
             <div className=" items-center justify-center p-2 flex">
-              <p className="text-black text-sm">{brand.tanggalKadaluarsa}</p>
+              <p className="text-black text-sm dark:text-white">{brand.tanggalKadaluarsa}</p>
             </div>
 
             <div className="items-center justify-center p-2 flex">

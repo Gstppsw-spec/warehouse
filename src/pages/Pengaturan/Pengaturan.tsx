@@ -74,7 +74,7 @@ export const Pengaturan = () => {
                 onClick={toggleDropdown}
               >
                 {/* Display selected language */}
-                <div className="flex items-center">
+                <div className="flex items-center dark:text-black">
                   <img
                     src={selectedLang.flag}
                     alt={selectedLang.label}
@@ -83,7 +83,7 @@ export const Pengaturan = () => {
                   {selectedLang.label}
                 </div>
                 {/* Arrow icon */}
-                <FaChevronDown className="ml-2" />
+                <FaChevronDown className="ml-2 dark:text-black" />
               </button>
 
               {dropdownOpen && (
@@ -92,7 +92,7 @@ export const Pengaturan = () => {
                     {languages.map((lang) => (
                       <div
                         key={lang.code}
-                        className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer"
+                        className="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer dark:text-black"
                         onClick={() => handleLanguageChange(lang.code)}
                       >
                         <img

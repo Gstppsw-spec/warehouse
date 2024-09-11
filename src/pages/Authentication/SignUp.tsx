@@ -179,7 +179,7 @@ const SignIn: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="w-3/5 rounded-sm border border-stroke bg-[#24A3C4] shadow-default dark:border-strokedark dark:bg-boxdark">
+                <div className="w-3/5 rounded-sm border border-stroke bg-[#24A3C4] shadow-default dark:border-strokedark ">
                   <div className="text-center">
                     <div className="inline-block relative">
                       <img

@@ -116,7 +116,7 @@ export const ProfilPengguna = () => {
             className="block "
           >
             <svg
-              className="fill-black"
+              className="fill-black dark:fill-white"
               width="20"
               height="18"
               viewBox="0 0 20 18"
@@ -130,7 +130,7 @@ export const ProfilPengguna = () => {
             </svg>
           </button>
           <div>
-            <h2 className="text-lg font-bold text-black">Profil Pengguna</h2>
+            <h2 className="text-lg font-bold text-black dark:text-white">Profil Pengguna</h2>
           </div>
         </div>
       </div>

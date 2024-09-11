@@ -58,7 +58,7 @@ const Header = (props: {
         </div>
 
         <div>
-          <h2 className='text-black text-xl font-bold'>Warehouse Management System</h2>
+          <h2 className='text-black text-xl font-bold dark:text-white'>Warehouse Management System</h2>
         </div>
         
       </div>
