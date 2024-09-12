@@ -10,7 +10,18 @@ export const LaporanPenyimpanan = () => {
   const [searchQuery, setSearchQuery] = useState('');
 
   const confirm2 = () => {
-    confirmDialog({
+    let dialogRef;
+    const reject = () => {
+      console.log('Cancelled');
+      dialogRef.hide();
+    };
+
+    const accept = () => {
+      console.log('navigate');
+      dialogRef.hide();
+    };
+
+    dialogRef = confirmDialog({
       message: (
         <span style={{ fontSize: '12px', wordWrap: 'break-word' }}>
           Apakah anda ingin mengekspor laporan penyimpanan?
@@ -19,7 +30,7 @@ export const LaporanPenyimpanan = () => {
       header: 'Ekspor laporan penyimpanan',
       icon: (
         <div className="bg-red-300 p-2 rounded-full">
-           <img src={Save} className="w-5 h-5" />
+          <img src={Save} className="w-5 h-5" />
         </div>
       ),
       acceptClassName:
@@ -29,35 +40,35 @@ export const LaporanPenyimpanan = () => {
       className: 'w-[500px]',
       acceptLabel: 'Ekspor',
       rejectLabel: 'Cancel',
-      accept() {
-        navigate('/laporan-penyimpanan');
-      },
       closable: true,
       footer: (
-      <div className="flex items-center justify-between w-full">
-        {/* Dropdown */}
-        <select className="bg-gray-200 text-black px-2 py-1 rounded-sm text-sm border">
-          <option value="option1">Save as PDF</option>
-          <option value="option2">Save as Excel</option>
-         
-        </select>
-        <div>
-          {/* Reject Button */}
-          <button
-            onClick={() => reject()}
-            className="bg-gray-300 text-black px-6 py-1 rounded-md text-sm border border-black"
-          >
-            Cancel
-          </button>
-          {/* Accept Button */}
-          <button
-            onClick={() => navigate('/laporan-penyimpanan')}
-            className="bg-[#7F56D9] text-white px-6 ml-3 py-1 rounded-md text-sm font-normal"
-          >
-            Ekspor
-          </button>
+        <div className="flex items-center justify-between w-full">
+          {/* Dropdown */}
+          <select className="bg-gray-200 text-black px-2 py-1 rounded-sm text-sm border">
+            <option value="option1">Save as PDF</option>
+            <option value="option2">Save as Excel</option>
+          </select>
+          <div>
+            {/* Reject Button */}
+            <button
+              onClick={reject}
+              className="bg-gray-300 text-black px-6 py-1 rounded-md text-sm border border-black"
+            >
+              Cancel
+            </button>
+            {/* Accept Button */}
+            <button
+              onClick={accept}
+              className="bg-[#7F56D9] text-white px-6 ml-3 py-1 rounded-md text-sm font-normal"
+            >
+              Ekspor
+            </button>
+          </div>
         </div>
-      </div>)
+      ),
+      onHide: () => {
+        console.log('Modal closed');
+      }
     });
   };
   return (
@@ -85,7 +96,9 @@ export const LaporanPenyimpanan = () => {
               />
             </svg>
           </button>
-          <h1 className="text-lg font-bold text-black dark:text-white">Laporan Penyimpanan</h1>
+          <h1 className="text-lg font-bold text-black dark:text-white">
+            Laporan Penyimpanan
+          </h1>
         </div>
 
         <div className="flex flex-row gap-3">
